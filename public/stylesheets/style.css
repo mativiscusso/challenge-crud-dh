@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1.1em;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+input {
+  width: 100%;
+  margin: 6px auto;
+}
+
+input, button {
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:hover {
+  box-shadow: 0px 0px 6px gray;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+}
+
+.row {
+  display: flex;
+  padding: 12px;
+}
+
+.col {
+  display: flex;
+  flex-grow: 1;
+  padding: 12px;
+}
+
+.form-control {
+  border: 1px solid gray;
+  border-radius: 3px;
+  padding: 9px 12px;
+}
+
+.btn {
+  border-radius: 3px;
+  padding: 6px 12px;
+  border: 1px solid #0079da;
+}
+
+.btn-primary {
+  color: white;
+  background-color: #0079da;
+}
+
+.list-group {
+  border-radius: 3px;
+  border: 1px solid gray;
+  width: 100%;
+}
+
+.list-group-item {
+  border-bottom: 1px solid gray;
+  padding: 9px;
+}
+
+.list-group-item:hover {
+  background-color: rgb(248, 248, 248);
+}
+
+.list-group-item:last-child {
+  border: none;
+}
+
+.list-group-item .item-delete {
+  display: none;
+}
+
+.list-group-item:hover .item-delete {
+  display: inline;
+  font-size: .75em;
+  color: red;
+}
+
+.d-col {
+  flex-direction: column;
+}
+
+.alert {
+  padding: 12px 0;
+}
+
+.invalid-text {
+  color: red;
+  font-size: .75em;
+}

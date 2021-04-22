@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>TODO List</title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col d-col w-100">
+        <div>
+          <form action="/tasks" method="post">
+            <input type="text" class="form-control" name="title">
+            <button class="btn btn-primary">Enviar</button>
+          </form>
+        </div>
+        <!-- Validacion opcional -->
+        <div class="alert">
+          <p class="invalid-text">El texto debe contener al menos 3 caracteres</p>
+        </div>
+        <!-- Validacion opcional -->
+
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <div class="list-group">
+          <!-- Task -->
+          <div class="list-group-item">
+            <a href="/tasks/1">
+              Titulo de la tarea y ruta de la misma, a modo de ejemplo
+            </a>
+
+            <form action="/tasks/1" method="POST">
+              <button class="btn item-delete">Borrar</button>
+            </form>
+          </div>
+          <!-- Task -->
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
